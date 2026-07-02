@@ -1,0 +1,18 @@
+{
+  "environment": "dev",
+  "project": "retailmax-lakehouse",
+  "storage": {
+    "account_name": "retailmaxadlsdev",
+    "bronze_path": "abfss://bronze@retailmaxadlsdev.dfs.core.windows.net/",
+    "silver_path": "abfss://silver@retailmaxadlsdev.dfs.core.windows.net/",
+    "gold_path": "abfss://gold@retailmaxadlsdev.dfs.core.windows.net/",
+    "configs_path": "abfss://configs@retailmaxadlsdev.dfs.core.windows.net/"
+  },
+  "databricks": {
+    "catalog": "retailmax_dev",
+    "bronze_schema": "bronze",
+    "silver_schema": "silver",
+    "gold_schema": "gold"
+  },
+  "secret_scope": "kv-retailmax"
+}
